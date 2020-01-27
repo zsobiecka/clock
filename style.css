@@ -1,0 +1,38 @@
+body {
+    background-image: url(img/clock-bg.jpeg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.clock {
+    border: 20px solid white;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    position: relative;
+    margin: 160px auto;
+    padding: 2rem;
+    align-items: center;
+}
+
+
+.clock-shield {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /*transform: translateY(-3px);*/
+}
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    /* specify the place from which the hand is rotating /by default 50%/*/
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
